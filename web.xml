@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         version="3.1">
+
+  <display-name>ReWearPlatform</display-name>
+
+  <!-- Welcome page -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <!-- Auth filter -->
+  <filter>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>filters.AuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/dashboard</url-pattern>
+    <url-pattern>/dashboard.jsp</url-pattern>
+    <url-pattern>/add-item</url-pattern>
+    <url-pattern>/add-item.jsp</url-pattern>
+    <url-pattern>/item-detail</url-pattern>
+    <url-pattern>/item-detail.jsp</url-pattern>
+    <url-pattern>/admin</url-pattern>
+    <url-pattern>/admin-panel.jsp</url-pattern>
+  </filter-mapping>
+
+</web-app>
