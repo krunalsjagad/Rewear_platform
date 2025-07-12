@@ -1,0 +1,16 @@
+# Build and IDE
+target/
+*.class
+*.log
+*.tmp
+.idea/
+.vscode/
+.DS_Store
+
+# Secrets and config
+config/config.properties
+
+# OS / Misc
+Thumbs.db
+*.swp
+*.bak
